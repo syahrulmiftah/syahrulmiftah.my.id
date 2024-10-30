@@ -33,9 +33,7 @@
 .grey-150 {
   color: var(--grey-150, rgba(217, 217, 217, 1));
 }
-.grey-250 {
-  color: var(--grey-250, rgba(191, 191, 191, 1));
-}
+
 .grey-500 {
   color: var(--grey-500, rgba(128, 128, 128, 1));
 }

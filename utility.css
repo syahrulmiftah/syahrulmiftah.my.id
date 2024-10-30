@@ -5,30 +5,7 @@
   color: var(--black);
 }
 
-.quote .green {
-  border-bottom-color: var(--green, #00ff1a);
-}
-.quote .pink {
-  border-bottom-color: var(--pink, #fa00ff);
-}
-.quote .blue {
-  border-bottom-color: var(--blue, #000aff);
-}
-.quote .red {
-  border-bottom-color: var(--red, #f00);
-}
-.quote .yellow {
-  border-bottom-color: var(--yellow, #faff00);
-}
-.quote .cyan {
-  border-bottom-color: var(--cyan, #00fff0);
-}
-.quote .orange {
-  border-bottom-color: var(--orange, #ffa800);
-}
-.quote .purple {
-  border-bottom-color: var(--purple, #9e00ff);
-}
+
 
 .grey-150 {
   color: var(--grey-150, rgba(217, 217, 217, 1));

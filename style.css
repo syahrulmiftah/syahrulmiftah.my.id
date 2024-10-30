@@ -109,7 +109,7 @@
 }
 
 body {
-  background-color: var(--black);
+  background-color: var(--black, #000);
   justify-items: center;
   width: 100%;
 }
@@ -144,6 +144,12 @@ header {
   overflow: hidden;
   width: 100%;
   max-width: 90rem;
+}
+
+.header-container,
+.main-container {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 section {
@@ -181,33 +187,33 @@ footer {
   --hero-image-size: clamp(5rem, 25vw, 22.5rem);
   --body-inline-padding: clamp(1rem, -1.625rem + 10.5vw, 6.25rem);
   --section-block-padding: clamp(2rem, -2rem + 16vw, 10rem);
-  --figma: rgba(26, 188, 254, 1);
-  --dribbble: rgba(255, 83, 149, 1);
-  --green: rgba(0, 255, 26, 1);
-  --grey-150: rgba(217, 217, 217, 1);
-  --grey-250: rgba(191, 191, 191, 1);
-  --grey-500: rgba(128, 128, 128, 1);
-  --grey-800: rgba(51, 51, 51, 1);
-  --grey-850: rgba(38, 38, 38, 1);
-  --grey-960: rgba(10, 10, 10, 1);
-  --bg: rgba(14, 14, 14, 1);
-  --black: rgba(0, 0, 0, 1);
-  --blue: rgba(0, 10, 255, 1);
-  --cyan: rgba(0, 255, 240, 1);
-  --dark: rgba(19, 20, 23, 1);
-  --white: rgba(245, 245, 245, 1);
-  --pink: rgba(250, 0, 255, 1);
-  --primary: rgba(76, 218, 53, 1);
-  --primary-25: rgba(76, 218, 53, 0.25);
-  --project-1: rgba(0, 255, 240, 1);
-  --project-2: rgba(20, 241, 149, 1);
-  --project-3: rgba(123, 173, 234, 1);
-  --project-4: rgba(228, 161, 73, 1);
-  --project-5: rgba(255, 236, 184, 1);
-  --purple: rgba(158, 0, 255, 1);
-  --red: rgba(255, 0, 0, 1);
-  --yellow: rgba(250, 255, 0, 1);
-  --orange: rgba(255, 168, 0, 1);
+  --figma: #1abcfe;
+  --dribbble: #ff5395;
+  --green: #00ff1a;
+  --grey-150: #d9d9d9;
+  --grey-250: #bfbfbf;
+  --grey-500: #808080;
+  --grey-800: #333333;
+  --grey-850: #262626;
+  --grey-960: #0a0a0a;
+  --bg: #0e0e0e;
+  --black: #000000;
+  --blue: #000aff;
+  --cyan: #00fff0;
+  --dark: #131417;
+  --white: #f5f5f5;
+  --pink: #fa00ff;
+  --primary: #4cda35;
+  --primary-25: rgba(76, 218, 53, 0.25); /* Kept rgba due to opacity */
+  --project-1: #00fff0;
+  --project-2: #14f195;
+  --project-3: #7badea;
+  --project-4: #e4a149;
+  --project-5: #ffecb8;
+  --purple: #9e00ff;
+  --red: #ff0000;
+  --yellow: #faff00;
+  --orange: #ffa800;
 }
 
 h1 {
@@ -229,7 +235,7 @@ h1 {
   display: inline-block;
   width: 0.25rem;
   height: var(--h1-height);
-  background-color: var(--green);
+  background-color: var(--primary, #4cda35);
   animation: blink 0.7s step-end infinite;
   margin-left: -0.75rem;
 }
@@ -321,14 +327,14 @@ button {
   font-style: normal;
 }
 
-.logo .logo-top {
+.logo-top {
   color: var(--white, #f5f5f5);
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.5rem;
 }
 
-.logo .logo-down {
+.logo-down {
   font-size: 1.15rem;
   font-weight: 200;
   line-height: 1.5rem;
@@ -383,7 +389,7 @@ button {
 
 .bt-primary p,
 .bt-primary svg {
-  color: var(--black);
+  color: var(--black, #000);
   position: relative; /* To ensure text is above the pseudo-element */
   z-index: 2; /* Ensure text appears above pseudo-element */
   transition: color 0.3s ease; /* Transition for text color */
@@ -391,7 +397,7 @@ button {
 
 .bt-secondary p,
 .bt-secondary svg {
-  color: var(--white);
+  color: var(--white, #f5f5f5);
   position: relative; /* To ensure text is above the pseudo-element */
   z-index: 2; /* Ensure text appears above pseudo-element */
   transition: color 0.3s ease; /* Transition for text color */
@@ -411,11 +417,11 @@ button {
 }
 
 .bt-primary::before {
-  background: var(--black);
+  background: var(--black, #000);
 }
 
 .bt-secondary::before {
-  background: var(--white);
+  background: var(--white, #f5f5f5);
 }
 
 #figma-bt::before {
@@ -440,23 +446,23 @@ button {
 }
 
 .bt-primary:hover {
-  border: 1px solid var(--green);
+  border: 1px solid var(--primary, #4cda35);
 }
 
 .bt-primary:hover p {
-  color: var(--green); /* Change text color to black */
+  color: var(--primary, #4cda35); /* Change text color to black */
 }
 
 .bt-primary:hover p,
 .bt-primary:hover svg path {
-  color: var(--green, #000); /* Change text color to black */
-  fill: var(--green, #000); /* Initial fill color for SVG */
+  color: var(--primary, #4cda35); /* Change text color to black */
+  fill: var(--primary, #4cda35); /* Initial fill color for SVG */
 }
 
 .bt-secondary:hover p,
 .bt-secondary:hover svg path {
-  color: var(--black); /* Change text color to black */
-  fill: var(--black); /* Initial fill color for SVG */
+  color: var(--black, #000); /* Change text color to black */
+  fill: var(--black, #000); /* Initial fill color for SVG */
 }
 
 .bt-primary svg path {
@@ -477,17 +483,13 @@ button {
 }
 
 .bt-social p {
-  color: var(--white);
+  color: var(--white, #f5f5f5);
 
   /* p-sm-mono */
   font-family: "Space Mono";
-  font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 1.5rem; /* 150% */
 }
-
-/* Hover effect to change the color of the SVG */
 
 /*HERO*/
 
@@ -866,14 +868,14 @@ button {
   border: none;
   border-radius: 12px;
   background: var(--grey-850, #262626);
-  color: var(--white);
+  color: var(--white, #f5f5f5);
   width: 100%;
 }
 
 .connect-input:focus {
-  accent-color: var(--green);
-  caret-color: var(--green);
-  border: 1px solid var(--green);
+  accent-color: var(--primary, #4cda35);
+  caret-color: var(--primary, #4cda35);
+  border: 1px solid var(--primary, #4cda35);
 }
 
 button .white-fill {
@@ -1005,7 +1007,7 @@ button .white-fill {
 
   border-radius: 150px;
   border: 1px solid var(--white, #f5f5f5);
-  background-color: var(--black);
+  background-color: var(--black, #000);
 }
 
 #bt-back-to-top svg {
@@ -1065,7 +1067,7 @@ input[type="checkbox"]:checked + label + .faq-answer {
 }
 
 .plusminus:hover span {
-  background: var(--green);
+  background: var(--primary, #4cda35);
 }
 
 /*Everything after this is just for presentation*/
@@ -1141,12 +1143,12 @@ label {
   .section-hero img {
     max-width: 10rem;
   }
-  .logo .logo-top {
+  .logo-top {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 
-  .logo .logo-down {
+  .logo-down {
     font-size: 0.875rem;
     line-height: 1rem;
   }

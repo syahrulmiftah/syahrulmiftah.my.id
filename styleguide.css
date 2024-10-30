@@ -1,12 +1,6 @@
 :root {
   --ti-cursor-color: var(--green);
 
-  --bg: rgba(14, 14, 14, 1);
-  --black: rgba(0, 0, 0, 1);
-  --blue: rgba(0, 10, 255, 1);
-  --cyan: rgba(0, 255, 240, 1);
-  --dark: rgba(19, 20, 23, 1);
-  --dribbble: rgba(255, 83, 149, 1);
   --email-lg-font-family: "Mango Grotesque", Helvetica;
   --email-lg-font-size: 6rem; /* 96px */
   --email-lg-font-style: normal;
@@ -25,14 +19,6 @@
   --email-sm-font-weight: 200;
   --email-sm-letter-spacing: 0rem; /* 0px */
   --email-sm-line-height: 2.5rem; /* 40px */
-  --figma: rgba(26, 188, 254, 1);
-  --green: rgba(0, 255, 26, 1);
-  --grey-150: rgba(217, 217, 217, 1);
-  --grey-250: rgba(191, 191, 191, 1);
-  --grey-500: rgba(128, 128, 128, 1);
-  --grey-800: rgba(51, 51, 51, 1);
-  --grey-850: rgba(38, 38, 38, 1);
-  --grey-960: rgba(10, 10, 10, 1);
   --h-1-font-family: "Mango Grotesque", Helvetica;
   --h-1-font-size: 12.5rem; /* 200px */
   --h-1-font-style: normal;
@@ -99,7 +85,6 @@
   --menu-font-weight: 400;
   --menu-letter-spacing: 0.125rem; /* 2px */
   --menu-line-height: normal;
-  --orange: rgba(255, 168, 0, 1);
   --p-font-family: "Space Grotesk", Helvetica;
   --p-font-size: 1.125rem; /* 18px */
   --p-font-style: normal;
@@ -124,16 +109,4 @@
   --p-sm-mono-font-weight: 400;
   --p-sm-mono-letter-spacing: 0rem; /* 0px */
   --p-sm-mono-line-height: 1.5rem; /* 24px */
-  --pink: rgba(250, 0, 255, 1);
-  --primary: rgba(76, 218, 53, 1);
-  --primary-25: rgba(76, 218, 53, 0.25);
-  --project-1: rgba(0, 255, 240, 1);
-  --project-2: rgba(20, 241, 149, 1);
-  --project-3: rgba(123, 173, 234, 1);
-  --project-4: rgba(228, 161, 73, 1);
-  --project-5: rgba(255, 236, 184, 1);
-  --purple: rgba(158, 0, 255, 1);
-  --red: rgba(255, 0, 0, 1);
-  --white: rgba(245, 245, 245, 1);
-  --yellow: rgba(250, 255, 0, 1);
 }

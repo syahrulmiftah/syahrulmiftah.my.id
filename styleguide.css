@@ -1,0 +1,139 @@
+:root {
+  --ti-cursor-color: var(--green);
+
+  --bg: rgba(14, 14, 14, 1);
+  --black: rgba(0, 0, 0, 1);
+  --blue: rgba(0, 10, 255, 1);
+  --cyan: rgba(0, 255, 240, 1);
+  --dark: rgba(19, 20, 23, 1);
+  --dribbble: rgba(255, 83, 149, 1);
+  --email-lg-font-family: "Mango Grotesque", Helvetica;
+  --email-lg-font-size: 6rem; /* 96px */
+  --email-lg-font-style: normal;
+  --email-lg-font-weight: 200;
+  --email-lg-letter-spacing: 0rem; /* 0px */
+  --email-lg-line-height: 6rem; /* 96px */
+  --email-md-font-family: "Mango Grotesque", Helvetica;
+  --email-md-font-size: 4rem; /* 64px */
+  --email-md-font-style: normal;
+  --email-md-font-weight: 200;
+  --email-md-letter-spacing: 0rem; /* 0px */
+  --email-md-line-height: 4rem; /* 64px */
+  --email-sm-font-family: "Mango Grotesque", Helvetica;
+  --email-sm-font-size: 2.5rem; /* 40px */
+  --email-sm-font-style: normal;
+  --email-sm-font-weight: 200;
+  --email-sm-letter-spacing: 0rem; /* 0px */
+  --email-sm-line-height: 2.5rem; /* 40px */
+  --figma: rgba(26, 188, 254, 1);
+  --green: rgba(0, 255, 26, 1);
+  --grey-150: rgba(217, 217, 217, 1);
+  --grey-250: rgba(191, 191, 191, 1);
+  --grey-500: rgba(128, 128, 128, 1);
+  --grey-800: rgba(51, 51, 51, 1);
+  --grey-850: rgba(38, 38, 38, 1);
+  --grey-960: rgba(10, 10, 10, 1);
+  --h-1-font-family: "Mango Grotesque", Helvetica;
+  --h-1-font-size: 12.5rem; /* 200px */
+  --h-1-font-style: normal;
+  --h-1-font-weight: 700;
+  --h-1-letter-spacing: 0.125rem; /* 2px */
+  --h-1-line-height: 12.5rem; /* 200px */
+  --h-2-font-family: "Mango Grotesque", Helvetica;
+  --h-2-font-size: 6.25rem; /* 100px */
+  --h-2-font-style: normal;
+  --h-2-font-weight: 600;
+  --h-2-letter-spacing: 0rem; /* 0px */
+  --h-2-line-height: 6.25rem; /* 100px */
+  --h-3-font-family: "Mango Grotesque", Helvetica;
+  --h-3-font-size: 4rem; /* 64px */
+  --h-3-font-style: normal;
+  --h-3-font-weight: 500;
+  --h-3-letter-spacing: 0.08rem; /* 1.28px */
+  --h-3-line-height: 4rem; /* 64px */
+  --h-4-font-family: "Space Mono", Helvetica;
+  --h-4-font-size: 2rem; /* 32px */
+  --h-4-font-style: normal;
+  --h-4-font-weight: 400;
+  --h-4-letter-spacing: -0.1rem; /* -1.6px */
+  --h-4-line-height: 2.25rem; /* 36px */
+  --h-5-font-family: "Space Mono", Helvetica;
+  --h-5-font-size: 1.5rem; /* 24px */
+  --h-5-font-style: normal;
+  --h-5-font-weight: 400;
+  --h-5-letter-spacing: 0rem; /* 0px */
+  --h-5-line-height: 1.5rem; /* 24px */
+  --h-6-font-family: "Space Mono", Helvetica;
+  --h-6-font-size: 1.25rem; /* 20px */
+  --h-6-font-style: normal;
+  --h-6-font-weight: 400;
+  --h-6-letter-spacing: 0rem; /* 0px */
+  --h-6-line-height: 1.5rem; /* 24px */
+  --h2-mobile-font-family: "Mango Grotesque", Helvetica;
+  --h2-mobile-font-size: 4rem; /* 64px */
+  --h2-mobile-font-style: normal;
+  --h2-mobile-font-weight: 600;
+  --h2-mobile-letter-spacing: 0rem; /* 0px */
+  --h2-mobile-line-height: 4rem; /* 64px */
+  --h3-mobile-font-family: "Mango Grotesque", Helvetica;
+  --h3-mobile-font-size: 3rem; /* 48px */
+  --h3-mobile-font-style: normal;
+  --h3-mobile-font-weight: 500;
+  --h3-mobile-letter-spacing: 0.06rem; /* 0.96px */
+  --h3-mobile-line-height: 3rem; /* 48px */
+  --h6-mono-font-family: "Space Mono", Helvetica;
+  --h6-mono-font-size: 1.25rem; /* 20px */
+  --h6-mono-font-style: normal;
+  --h6-mono-font-weight: 400;
+  --h6-mono-letter-spacing: 0rem; /* 0px */
+  --h6-mono-line-height: 1.25rem; /* 20px */
+  --link-font-family: "Space Grotesk", Helvetica;
+  --link-font-size: 1rem; /* 16px */
+  --link-font-style: normal;
+  --link-font-weight: 400;
+  --link-letter-spacing: 0rem; /* 0px */
+  --link-line-height: 1.5rem; /* 24px */
+  --menu-font-family: "Manrope", Helvetica;
+  --menu-font-size: 1.25rem; /* 20px */
+  --menu-font-style: normal;
+  --menu-font-weight: 400;
+  --menu-letter-spacing: 0.125rem; /* 2px */
+  --menu-line-height: normal;
+  --orange: rgba(255, 168, 0, 1);
+  --p-font-family: "Space Grotesk", Helvetica;
+  --p-font-size: 1.125rem; /* 18px */
+  --p-font-style: normal;
+  --p-font-weight: 400;
+  --p-letter-spacing: 0rem; /* 0px */
+  --p-lg-font-family: "Space Grotesk", Helvetica;
+  --p-lg-font-size: 1.25rem; /* 20px */
+  --p-lg-font-style: normal;
+  --p-lg-font-weight: 400;
+  --p-lg-letter-spacing: 0rem; /* 0px */
+  --p-lg-line-height: 2rem; /* 32px */
+  --p-line-height: 1.75rem; /* 28px */
+  --p-sm-font-family: "Space Grotesk", Helvetica;
+  --p-sm-font-size: 1rem; /* 16px */
+  --p-sm-font-style: normal;
+  --p-sm-font-weight: 300;
+  --p-sm-letter-spacing: 0rem; /* 0px */
+  --p-sm-line-height: 1.5rem; /* 24px */
+  --p-sm-mono-font-family: "Space Mono", Helvetica;
+  --p-sm-mono-font-size: 1rem; /* 16px */
+  --p-sm-mono-font-style: normal;
+  --p-sm-mono-font-weight: 400;
+  --p-sm-mono-letter-spacing: 0rem; /* 0px */
+  --p-sm-mono-line-height: 1.5rem; /* 24px */
+  --pink: rgba(250, 0, 255, 1);
+  --primary: rgba(76, 218, 53, 1);
+  --primary-25: rgba(76, 218, 53, 0.25);
+  --project-1: rgba(0, 255, 240, 1);
+  --project-2: rgba(20, 241, 149, 1);
+  --project-3: rgba(123, 173, 234, 1);
+  --project-4: rgba(228, 161, 73, 1);
+  --project-5: rgba(255, 236, 184, 1);
+  --purple: rgba(158, 0, 255, 1);
+  --red: rgba(255, 0, 0, 1);
+  --white: rgba(245, 245, 245, 1);
+  --yellow: rgba(250, 255, 0, 1);
+}

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="utility.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="checkbox.css" />
+    <link rel="stylesheet" href="reveal.css" />
+    <script src="script.js" defer></script>
+    <link rel="icon" href="/res/favicon.svg" type="image/svg+xml" />
+    <!-- 'defer' ensures the script runs after the HTML is fully loaded -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "pb7QFOLamIFS-p2bx",
+        });
+      })();
+    </script>
+
+    <title>Syahrul's Portfolio</title>
+  </head>
+  <body>
+    <header class="section-header">
+      <div class="header-container">
+        <div class="logo">
+          <p class="logo-top hidden-down">Syahrul Miftah</p>
+          <p class="logo-down hidden-down">UI/UX Designer</p>
+        </div>
+        <button
+          type="button"
+          class="bt-secondary hidden-down"
+          onclick="scrollToEmail()"
+        >
+          <p>Contact Me</p>
+          <svg
+            width="36"
+            height="36"
+            viewBox="0 0 36 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_266_456)">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M36 0H0V36H36V0ZM21.5863 15.4197L12.9914 24.0146L11.8129 22.836L20.4078 14.2412L14.1699 14.2412L14.1699 12.5747H23.2527V21.6575L21.5863 21.6575V15.4197Z"
+                fill="#F5F5F5"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_266_456">
+                <rect width="36" height="36" rx="18" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <div class="main-container">
+      <section class="hero section-hero">
+        <div class="hero-container">
+          <div class="title-sub">
+            <h4 class="hidden">Hi There,</h4>
+            <div class="green-box hidden">
+              <h4 class="name">I'm Syahrul</h4>
+            </div>
+          </div>
+          <div class="title-main">
+            <h1 class="hidden-up">I DESIGN</h1>
+            <h1 class="typewriter" id="typewriter">
+              <span id="text"></span>
+              <div id="caret" class="caret"></div>
+            </h1>
+          </div>
+        </div>
+        <div id="hero-image-container">
+          <img class="hidden-left" alt="Img hero" src=./res/img-hero.png />
+        </div>
+      </section>
+      <section class="quote section-quote">
+        <div class="container">
+          <ul>
+            <li class="hidden-down">"Syahrul is a</li>
+            <li class="hidden-down">
+              <span class="highlight green">Self Taught</span>
+            </li>
+            <li class="hidden-down">UI/UX Designer who is</li>
+            <li class="hidden-down">
+              <span class="highlight pink">Creative,</span>
+            </li>
+            <li class="hidden-down">
+              <span class="highlight blue">Committed,</span>
+            </li>
+            <li class="hidden-down">and</li>
+            <li class="hidden-down">
+              <span class="highlight red">Passionate</span>
+            </li>
+            <li class="hidden-down">about his craft. He is</li>
+            <li class="hidden-down">
+              <span class="highlight yellow">Adaptable,</span>
+            </li>
+            <li class="hidden-down">
+              <span class="highlight cyan">Reliable,</span>
+            </li>
+            <li class="hidden-down">
+              <span class="highlight orange">Empathetic,</span>
+            </li>
+            <li class="hidden-down">and</li>
+            <li class="hidden-down">
+              <span class="highlight purple">Easy to work with</span>
+            </li>
+            <li class="hidden-down">."</li>
+          </ul>
+        </div>
+        <div class="who-says hidden">-My Mom (probably)</div>
+      </section>
+      <section class="projects section-projects">
+        <div class="container-title">
+          <div class="green-box hidden">
+            <h5>Portfolio</h5>
+          </div>
+          <div class="container">
+            <h2 class="hidden">Featured Projects</h2>
+            <p class="hidden">Here are some of the best project i’ve made.</p>
+          </div>
+        </div>
+        <div class="container-projects">
+          <div class="project-details">
+            <div class="project-description">
+              <div class="title hidden">
+                <h3>Crypto Dashboard</h3>
+              </div>
+              <p class="hidden">
+                A dashboard for a crypto swapping website using a futuristic
+                glow style. Made with consistent styling across the design.
+              </p>
+            </div>
+            <div class="project-info">
+              <p class="upper hidden">Project Info</p>
+              <div class="container">
+                <div class="year hidden">
+                  <p>Year</p>
+                  <p class="bold">2023</p>
+                </div>
+                <div class="role hidden">
+                  <p>Role</p>
+                  <p class="bold">Lead UI Designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="bt-links">
+              <button type="button" class="bt-secondary hidden-up">
+                <svg
+                  width="25"
+                  height="24"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="dribbble">
+                    <path
+                      id="vector"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.5 2C6.9794 2 2.5 6.4794 2.5 12C2.5 17.5206 6.9794 22 12.5 22C18.0098 22 22.5 17.5206 22.5 12C22.5 6.4794 18.0098 2 12.5 2ZM19.1052 6.60954C20.2983 8.0629 21.0141 9.91758 21.0358 11.9241C20.7538 11.8698 17.9338 11.295 15.0922 11.6529C15.0271 11.5119 14.9729 11.3601 14.9078 11.2082C14.7343 10.7961 14.539 10.3731 14.3438 9.9718C17.4892 8.69198 18.9208 6.84816 19.1052 6.60954ZM12.5 3.47505C14.6692 3.47505 16.654 4.2885 18.1616 5.62256C18.0098 5.83948 16.7191 7.564 13.6822 8.70282C12.2831 6.13232 10.7321 4.0282 10.4935 3.70282C11.1334 3.55098 11.8059 3.47505 12.5 3.47505ZM8.8666 4.27766C9.09436 4.58134 10.6128 6.69632 12.0336 9.21258C8.0423 10.2755 4.51736 10.2538 4.13774 10.2538C4.69088 7.60738 6.48048 5.40564 8.8666 4.27766ZM3.95336 12.0108C3.95336 11.9241 3.95336 11.8373 3.95336 11.7505C4.32213 11.7614 8.4653 11.8156 12.7278 10.5358C12.9772 11.013 13.205 11.5011 13.4219 11.9892C13.3134 12.0217 13.1941 12.0542 13.0857 12.0868C8.68222 13.5076 6.33948 17.3905 6.14426 17.7158C4.7885 16.2082 3.95336 14.2017 3.95336 12.0108ZM12.5 20.5466C10.526 20.5466 8.7039 19.8742 7.26138 18.7462C7.41324 18.4317 9.1486 15.0911 13.9642 13.41C13.9859 13.3991 13.9967 13.3991 14.0184 13.3883C15.2223 16.5011 15.7104 19.115 15.8406 19.8633C14.8102 20.308 13.6822 20.5466 12.5 20.5466ZM17.2614 19.0824C17.1746 18.5618 16.7191 16.0672 15.602 12.9978C18.2809 12.5748 20.6236 13.269 20.9165 13.3666C20.5477 15.7419 19.1811 17.7918 17.2614 19.0824Z"
+                      fill="#F5F5F5"
+                    />
+                  </g>
+                </svg>
+
+                <p class="p-sm-mono">Dribbble</p>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="arrow-side" clip-path="url(#clip0_120_1392)">
+                    <path
+                      id="Vector"
+                      d="M4.9915 16.0146L13.5864 7.41974V13.6576L15.2528 13.6576L15.2528 4.57482L6.17001 4.57482L6.17001 6.24123L12.4079 6.24123L3.81299 14.8361L4.9915 16.0146Z"
+                      fill="#F5F5F5"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_120_1392">
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+              <button type="button" class="bt-secondary hidden-up">
+                <svg
+                  width="25"
+                  height="24"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="figma">
+                    <path
+                      id="vector"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M5.54785 5.74189C5.54785 3.6753 7.22316 2 9.28975 2H15.7104C17.777 2 19.4523 3.6753 19.4523 5.74189C19.4523 7.05048 18.7806 8.20217 17.7631 8.87099C18.7806 9.5398 19.4523 10.6915 19.4523 12.0001C19.4523 14.0667 17.777 15.742 15.7104 15.742H15.6291C14.6603 15.742 13.7775 15.3738 13.1129 14.7697V18.2175C13.1129 20.3116 11.3938 22 9.30994 22C7.24848 22 5.54785 20.3298 5.54785 18.2581C5.54785 16.9496 6.21952 15.7979 7.23689 15.1291C6.21952 14.4603 5.54785 13.3086 5.54785 12.0001C5.54785 10.6915 6.21957 9.5398 7.23701 8.87099C6.21957 8.20217 5.54785 7.05048 5.54785 5.74189ZM11.8872 14.5162H9.28975L9.27492 14.5162C7.89208 14.5083 6.77355 13.3848 6.77355 12.0001C6.77355 10.6104 7.90008 9.48387 9.28975 9.48387H11.8872V14.5162ZM13.1129 12.0016C13.1138 13.3906 14.24 14.5163 15.6291 14.5163H15.7104C17.1001 14.5163 18.2266 13.3897 18.2266 12.0001C18.2266 10.6104 17.1001 9.48387 15.7104 9.48387H15.6291C14.24 9.48387 13.1138 10.6096 13.1129 11.9985V12.0016ZM9.28975 15.742L9.27502 15.7419C7.89213 15.7499 6.77355 16.8734 6.77355 18.2581C6.77355 19.6427 7.91514 20.7743 9.30994 20.7743C10.7272 20.7743 11.8872 19.6245 11.8872 18.2175V15.742H9.28975ZM9.28975 3.22569H11.8872V8.2581H9.28975C7.90009 8.2581 6.77355 7.13156 6.77355 5.74189C6.77355 4.35224 7.90009 3.22569 9.28975 3.22569ZM13.1129 8.2581V3.22569H15.7104C17.1001 3.22569 18.2266 4.35224 18.2266 5.74189C18.2266 7.13156 17.1001 8.2581 15.7104 8.2581H13.1129Z"
+                      fill="#F5F5F5"
+                    />
+                  </g>
+                </svg>
+                <p class="p-sm-mono">Figma</p>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="arrow-side" clip-path="url(#clip0_120_1392)">
+                    <path
+                      id="Vector"
+                      d="M4.9915 16.0146L13.5864 7.41974V13.6576L15.2528 13.6576L15.2528 4.57482L6.17001 4.57482L6.17001 6.24123L12.4079 6.24123L3.81299 14.8361L4.9915 16.0146Z"
+                      fill="#F5F5F5"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_120_1392">
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="img-project hidden-left">
+            <img src="./res/rexswap.png" alt="Rexswap Project" />
+          </div>
+        </div>
+      </section>
+      <section class="about section-about">
+        <div class="container-title">
+          <div class="green-box hidden"><h5>About</h5></div>
+          <h2 class="hidden">Nice To Meet You</h2>
+        </div>
+        <div class="about-section-content">
+          <img class="hidden" src="./res/img-about.png" alt="Syahrul Image" />
+          <div class="about-section-description">
+            <p class="hidden-left" id="first-p">
+              I'm a UI/UX designer based in Indonesia. I began my design journey
+              in 2023 as an apprentice to a talented designer. Since then, I've
+              been developing my own approach, focusing on creating functional
+              and user-centered designs.
+            </p>
+            <p class="grey-250 hidden-left">
+              I come from an engineering background and later transitioned into
+              design, with some experience in front-end programming. This unique
+              combination shapes my design philosophy, where I prioritize
+              functionality over aesthetics. After all, design is ultimately
+              about serving the user, not just the design itself.
+            </p>
+            <p class="grey-250 hidden-left">
+              I love reading books, especially those on psychology. Learning
+              psychology helps me understand how people think and behave. This
+              insight is invaluable in UX design, as it allows me to create
+              experiences that connect with users on a deeper level, thereby
+              increasing user satisfaction.
+            </p>
+            <p class="grey-250 hidden-left">
+              I’m also interested in philosophy, particularly ethics. That’s why
+              I always try to be ethical when implementing my designs. I believe
+              honesty is a fundamental part of creating trust and achieving
+              long-term success.
+            </p>
+            <div class="container-skills">
+              <div class="skills">
+                <h6 class="hidden">HARD SKILLS</h6>
+                <div class="container">
+                  <div class="box-skill hidden-down"><p>UI Design</p></div>
+                  <div class="box-skill hidden-down"><p>UX Research</p></div>
+                  <div class="box-skill hidden-down"><p>Figma</p></div>
+                  <div class="box-skill hidden-down"><p>Python</p></div>
+                  <div class="box-skill hidden-down"><p>Wireframing</p></div>
+                  <div class="box-skill hidden-down"><p>HTML</p></div>
+                  <div class="box-skill hidden-down"><p>CSS</p></div>
+                  <div class="box-skill hidden-down"><p>Ethical Design</p></div>
+                </div>
+              </div>
+              <div class="skills">
+                <h6 class="hidden">SOFT SKILLS</h6>
+                <div class="container">
+                  <div class="box-skill hidden-down"><p>Empathy</p></div>
+                  <div class="box-skill hidden-down">
+                    <p>Critical Thinking</p>
+                  </div>
+                  <div class="box-skill hidden-down"><p>Adaptability</p></div>
+                  <div class="box-skill hidden-down">
+                    <p>Problem-Solving</p>
+                  </div>
+                  <div class="box-skill hidden-down"><p>Curiosity</p></div>
+                  <div class="box-skill hidden-down"><p>Resilience</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="email section-email" id="email-section">
+        <div class="container-title">
+          <div class="green-box hidden"><h5>Connects</h5></div>
+          <div class="title-subtitle">
+            <h2 class="hidden">Let’s Have a Chat</h2>
+            <p class="hidden">
+              Have an interesting project? Let’s discuss! <br />
+              You can use the template below.
+            </p>
+          </div>
+        </div>
+        <div class="container-email">
+          <p class="hidden-down">Hello,</p>
+          <div class="hidden-down">
+            <p>My name is</p>
+            <input class="connect-input" aria-placeholder="Name" type="text" />
+          </div>
+          <div class="hidden-down">
+            <p>I Work for a/an</p>
+            <input
+              class="connect-input"
+              aria-placeholder="Agency / Work Alone"
+              type="text"
+            />
+          </div>
+          <div class="hidden-down">
+            <p>I need help with</p>
+            <input
+              class="connect-input"
+              aria-placeholder="Project"
+              type="text"
+            />
+          </div>
+          <div class="hidden-down" id="last-email">
+            <p>You can email me at</p>
+            <input class="connect-input" aria-placeholder="Email" type="text" />
+          </div>
+        </div>
+        <div class="CTA">
+          <button type="button" class="bt-primary hidden-up" id="submitButton">
+            <p>Submit</p>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="arrow-side" clip-path="url(#clip0_120_1212)">
+                <path
+                  id="Vector"
+                  d="M4.9915 16.0146L13.5864 7.41974V13.6576L15.2528 13.6576L15.2528 4.57482L6.17001 4.57482L6.17001 6.24123L12.4079 6.24123L3.81299 14.8361L4.9915 16.0146Z"
+                  fill="#0E0E0E"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_120_1212">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <p class="hidden-down">Or</p>
+          <button type="button" class="bt-secondary hidden-up" id="openEmail">
+            <p>Write your own</p>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="arrow-side" clip-path="url(#clip0_120_1392)">
+                <path
+                  id="Vector"
+                  d="M4.9915 16.0146L13.5864 7.41974V13.6576L15.2528 13.6576L15.2528 4.57482L6.17001 4.57482L6.17001 6.24123L12.4079 6.24123L3.81299 14.8361L4.9915 16.0146Z"
+                  fill="#F5F5F5"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_120_1392">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section class="faq section-faq">
+        <div class="container-title">
+          <div class="green-box hidden"><h5>FAQ</h5></div>
+          <div class="container-subtitle">
+            <h2 class="hidden">Frequently Asked Question</h2>
+            <p class="hidden">Hope this clear out some of your concern</p>
+          </div>
+        </div>
+        <div class="faq-category">
+          <h3 class="hidden">Pricing</h3>
+          <div class="faq-box">
+            <div class="faq-grid hidden-down">
+              <p>What is your hourly rate?</p>
+              <input type="checkbox" id="q1-checkbox" />
+              <label for="q1-checkbox" class="plusminus" id="q1-plusminus">
+                <span></span>
+                <span></span>
+              </label>
+              <div for="q1-checkbox" id="q1-answer" class="faq-answer">
+                <p>My hourly rate is $50.</p>
+              </div>
+            </div>
+            <div class="faq-grid hidden-down">
+              <p>How much does it cost to make a landing page?</p>
+              <input type="checkbox" id="q2-checkbox" />
+              <label for="q2-checkbox" class="plusminus" id="q2-plusminus">
+                <span></span>
+                <span></span>
+              </label>
+              <div for="q2-checkbox" id="q2-answer" class="faq-answer">
+                <p>
+                  The cost for a landing page typically starts at $300,
+                  depending on the complexity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="section-footer">
+        <div class="top">
+          <div class="email-me hidden">
+            <p>Email Me</p>
+            <p class="green-underline">syahrulmiftahfarid@gmail.com</p>
+          </div>
+          <div class="social">
+            <button type="button" class="bt-social bt-secondary hidden-left">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="instagram-black-sharp">
+                  <g clip-path="url(#clip0_120_1484)">
+                    <g id="instagram">
+                      <path
+                        d="M16 18.8C14.5 18.8 13.2 17.6 13.2 16C13.2 14.5 14.4 13.2 16 13.2C17.5 13.2 18.8 14.4 18.8 16C18.8 17.5 17.5 18.8 16 18.8Z"
+                        fill="#F5F5F5"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M19.4 9.2H12.6C11.8 9.3 11.4 9.4 11.1 9.5C10.7 9.6 10.4 9.8 10.1 10.1C9.86261 10.3374 9.75045 10.5748 9.61489 10.8617C9.57916 10.9373 9.5417 11.0166 9.5 11.1C9.48453 11.1464 9.46667 11.1952 9.44752 11.2475C9.34291 11.5333 9.2 11.9238 9.2 12.6V19.4C9.3 20.2 9.4 20.6 9.5 20.9C9.6 21.3 9.8 21.6 10.1 21.9C10.3374 22.1374 10.5748 22.2495 10.8617 22.3851C10.9374 22.4209 11.0165 22.4583 11.1 22.5C11.1464 22.5155 11.1952 22.5333 11.2475 22.5525C11.5333 22.6571 11.9238 22.8 12.6 22.8H19.4C20.2 22.7 20.6 22.6 20.9 22.5C21.3 22.4 21.6 22.2 21.9 21.9C22.1374 21.6626 22.2495 21.4252 22.3851 21.1383C22.4209 21.0626 22.4583 20.9835 22.5 20.9C22.5155 20.8536 22.5333 20.8048 22.5525 20.7525C22.6571 20.4667 22.8 20.0762 22.8 19.4V12.6C22.7 11.8 22.6 11.4 22.5 11.1C22.4 10.7 22.2 10.4 21.9 10.1C21.6626 9.86261 21.4252 9.75045 21.1383 9.61488C21.0627 9.57918 20.9833 9.54167 20.9 9.5C20.8536 9.48453 20.8048 9.46666 20.7525 9.44752C20.4667 9.3429 20.0762 9.2 19.4 9.2ZM16 11.7C13.6 11.7 11.7 13.6 11.7 16C11.7 18.4 13.6 20.3 16 20.3C18.4 20.3 20.3 18.4 20.3 16C20.3 13.6 18.4 11.7 16 11.7ZM21.4 11.6C21.4 12.1523 20.9523 12.6 20.4 12.6C19.8477 12.6 19.4 12.1523 19.4 11.6C19.4 11.0477 19.8477 10.6 20.4 10.6C20.9523 10.6 21.4 11.0477 21.4 11.6Z"
+                        fill="#F5F5F5"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0 0H32V32H0V0ZM12.6 7.7H19.4C20.3 7.8 20.9 7.9 21.4 8.1C22 8.4 22.4 8.6 22.9 9.1C23.4 9.6 23.7 10.1 23.9 10.6C24.1 11.1 24.3 11.7 24.3 12.6V19.4C24.2 20.3 24.1 20.9 23.9 21.4C23.6 22 23.4 22.4 22.9 22.9C22.4 23.4 21.9 23.7 21.4 23.9C20.9 24.1 20.3 24.3 19.4 24.3H12.6C11.7 24.2 11.1 24.1 10.6 23.9C10 23.6 9.6 23.4 9.1 22.9C8.6 22.4 8.3 21.9 8.1 21.4C7.9 20.9 7.7 20.3 7.7 19.4V12.6C7.8 11.7 7.9 11.1 8.1 10.6C8.4 10 8.6 9.6 9.1 9.1C9.6 8.6 10.1 8.3 10.6 8.1C11.1 7.9 11.7 7.7 12.6 7.7Z"
+                        fill="#F5F5F5"
+                      />
+                    </g>
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_120_1484">
+                    <rect width="32" height="32" rx="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>Instagram</p>
+            </button>
+            <button type="button" class="bt-social bt-secondary hidden-left">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="telegram-black-sharp">
+                  <g clip-path="url(#clip0_120_1486)">
+                    <path
+                      id="telegram"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0 0H32V32H0V0ZM16.6919 12.0074C15.2589 12.6034 12.3949 13.8371 8.09992 15.7083C7.40248 15.9856 7.03714 16.257 7.00388 16.5223C6.94767 16.9706 7.50915 17.1472 8.27374 17.3876C8.37774 17.4203 8.4855 17.4542 8.59598 17.4901C9.34822 17.7346 10.3601 18.0207 10.8862 18.0321C11.3633 18.0424 11.8959 17.8457 12.4839 17.4419C16.4968 14.7331 18.5683 13.3639 18.6983 13.3344C18.7901 13.3136 18.9172 13.2874 19.0034 13.3639C19.0895 13.4405 19.0811 13.5855 19.0719 13.6244C19.0163 13.8615 16.8123 15.9106 15.6717 16.971C15.3161 17.3015 15.0639 17.536 15.0124 17.5896C14.8969 17.7096 14.7791 17.823 14.666 17.9321C13.9672 18.6058 13.4431 19.111 14.695 19.936C15.2967 20.3325 15.7781 20.6603 16.2584 20.9874C16.7829 21.3446 17.306 21.7009 17.9829 22.1446C18.1554 22.2576 18.3201 22.375 18.4805 22.4894C19.0909 22.9246 19.6393 23.3155 20.3168 23.2532C20.7105 23.217 21.1172 22.8468 21.3237 21.7427C21.8118 19.1335 22.7712 13.4801 22.9929 11.1505C23.0123 10.9464 22.9879 10.6851 22.9683 10.5705C22.9486 10.4558 22.9076 10.2924 22.7586 10.1715C22.582 10.0283 22.3095 9.99805 22.1877 10.0001C21.6335 10.01 20.7834 10.3056 16.6919 12.0074Z"
+                      fill="#F5F5F5"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_120_1486">
+                    <rect width="32" height="32" rx="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>Telegram</p>
+            </button>
+            <button type="button" class="bt-social bt-secondary hidden-left">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="dribbble-black-sharp">
+                  <g clip-path="url(#clip0_120_1488)">
+                    <g id="dribbble">
+                      <path
+                        d="M22.832 15.936C22.8 14.32 22.24 12.848 21.28 11.68C21.136 11.872 19.984 13.36 17.488 14.368C17.6478 14.6876 17.7916 15.0232 17.9355 15.3587L17.936 15.36C17.9601 15.4161 17.9841 15.4763 18.0081 15.5364C18.0321 15.5963 18.0561 15.6561 18.08 15.712C20.352 15.44 22.608 15.888 22.832 15.936Z"
+                        fill="#F5F5F5"
+                      />
+                      <path
+                        d="M20.528 10.896C19.328 9.84 17.728 9.184 16 9.184C15.44 9.184 14.912 9.248 14.4 9.36C14.4214 9.39107 14.4585 9.44312 14.5093 9.51429C14.8771 10.0295 15.9599 11.5465 16.944 13.36C19.376 12.448 20.4 11.072 20.528 10.896Z"
+                        fill="#F5F5F5"
+                      />
+                      <path
+                        d="M15.616 13.776C14.48 11.76 13.264 10.064 13.088 9.824C11.184 10.72 9.76001 12.48 9.29599 14.608L9.31256 14.608C9.69067 14.6083 12.4674 14.6104 15.616 13.776Z"
+                        fill="#F5F5F5"
+                      />
+                      <path
+                        d="M9.168 15.808V16.016C9.168 17.76 9.82401 19.36 10.928 20.576L10.9391 20.5582C11.1604 20.2017 13.0275 17.1942 16.48 16.08C16.5225 16.0658 16.565 16.0548 16.6061 16.0441C16.6579 16.0307 16.7074 16.0178 16.752 16C16.576 15.6 16.384 15.216 16.192 14.832C12.784 15.856 9.45599 15.824 9.168 15.808Z"
+                        fill="#F5F5F5"
+                      />
+                      <path
+                        d="M11.808 21.392C12.96 22.288 14.416 22.832 16 22.832C16.944 22.832 17.856 22.64 18.672 22.288C18.576 21.68 18.176 19.6 17.216 17.104C17.2049 17.104 17.1938 17.104 17.1826 17.1094C17.1778 17.1117 17.1729 17.1151 17.168 17.12C13.312 18.464 11.936 21.136 11.808 21.392Z"
+                        fill="#F5F5F5"
+                      />
+                      <path
+                        d="M18.48 16.8C19.376 19.248 19.744 21.248 19.808 21.664C21.344 20.64 22.432 18.992 22.736 17.088C22.7251 17.0851 22.7107 17.0811 22.6931 17.0763C22.3248 16.9748 20.5262 16.4793 18.48 16.8Z"
+                        fill="#F5F5F5"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0 0H32V32H0V0ZM8 16C8 11.584 11.584 8 16 8C20.4 8 24 11.584 24 16C24 20.416 20.4 24 16 24C11.584 24 8 20.416 8 16Z"
+                        fill="#F5F5F5"
+                      />
+                    </g>
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_120_1488">
+                    <rect width="32" height="32" rx="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>Dribbble</p>
+            </button>
+            <button type="button" class="bt-social bt-secondary hidden-left">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="x-black-sharp">
+                  <g clip-path="url(#clip0_120_1490)">
+                    <g id="x">
+                      <path
+                        d="M19.8997 23.0075H22.0677L12.0882 9.03973H9.92014L19.8997 23.0075Z"
+                        fill="#F5F5F5"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M32 0H0V32H32V0ZM23.4785 8L17.5222 14.7749L24 24H19.2356L14.8732 17.7878L9.41156 24H8L14.2466 16.8955L8 8H12.7644L16.8952 13.8826L22.0671 8H23.4785Z"
+                        fill="#F5F5F5"
+                      />
+                    </g>
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_120_1490">
+                    <rect width="32" height="32" rx="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>Twitter</p>
+            </button>
+            <button type="button" class="bt-social bt-secondary hidden-left">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="figma-black-sharp">
+                  <g clip-path="url(#clip0_120_1492)">
+                    <g id="figma">
+                      <path
+                        d="M15.5215 18.013V13.9871H13.4435C12.3318 13.9871 11.4306 14.8883 11.4306 16.0001C11.4306 17.1075 12.3249 18.0061 13.4308 18.013L13.4435 18.013H15.5215Z"
+                        fill="#F5F5F5"
+                      />
+                      <path
+                        d="M11.4306 21.0065C11.4306 19.899 12.3249 19.0004 13.4308 18.9936L13.4435 18.9936H15.5215V20.974C15.5215 22.0996 14.5935 23.0194 13.4597 23.0194C12.3438 23.0194 11.4306 22.1141 11.4306 21.0065Z"
+                        fill="#F5F5F5"
+                      />
+                      <path
+                        d="M18.515 18.013C17.4033 18.013 16.5021 17.1118 16.5021 16.0001C16.5021 14.8883 17.4033 13.9871 18.515 13.9871H18.5801C19.6918 13.9871 20.593 14.8883 20.593 16.0001C20.593 17.1118 19.6918 18.013 18.5801 18.013H18.515Z"
+                        fill="#F5F5F5"
+                      />
+                      <path
+                        d="M18.5801 13.0065H16.5021V8.98056H18.5801C19.6918 8.98056 20.593 9.88179 20.593 10.9935C20.593 12.1052 19.6918 13.0065 18.5801 13.0065Z"
+                        fill="#F5F5F5"
+                      />
+                      <path
+                        d="M13.4435 8.98056H15.5215V13.0065H13.4435C12.3318 13.0065 11.4306 12.1052 11.4306 10.9935C11.4306 9.88179 12.3318 8.98056 13.4435 8.98056Z"
+                        fill="#F5F5F5"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0 0H32V32H0V0ZM13.4435 8C11.7903 8 10.45 9.34024 10.45 10.9935C10.45 12.0404 10.9874 12.9617 11.8013 13.4968C10.9874 14.0318 10.45 14.9532 10.45 16.0001C10.45 17.0469 10.9873 17.9682 11.8012 18.5033C10.9873 19.0383 10.45 19.9597 10.45 21.0065C10.45 22.6639 11.8105 24 13.4597 24C15.1268 24 16.5021 22.6493 16.5021 20.974V18.2158C17.0337 18.699 17.74 18.9936 18.515 18.9936H18.5801C20.2333 18.9936 21.5736 17.6533 21.5736 16.0001C21.5736 14.9532 21.0362 14.0318 20.2222 13.4968C21.0362 12.9617 21.5736 12.0404 21.5736 10.9935C21.5736 9.34024 20.2333 8 18.5801 8H13.4435Z"
+                        fill="#F5F5F5"
+                      />
+                    </g>
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_120_1492">
+                    <rect width="32" height="32" rx="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>Figma</p>
+            </button>
+          </div>
+        </div>
+        <div class="bot">
+          <p class="white hidden-up">@syahrulmiftah 2024</p>
+          <div class="hidden-up">
+            <p class="white">back to top</p>
+            <button
+              onclick="topFunction()"
+              class="bt-secondary"
+              id="bt-back-to-top"
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="arrow-up">
+                  <path
+                    id="Vector"
+                    d="M15.991 26.5097V8.27719L22.6073 14.8934L24.3748 13.1259L14.741 3.49219L5.10726 13.1259L6.87476 14.8934L13.491 8.27719V26.5097H15.991Z"
+                    fill="#F5F5F5"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

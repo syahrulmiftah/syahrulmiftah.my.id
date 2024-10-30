@@ -339,7 +339,7 @@ button {
 }
 
 .bt-primary::before {
-  background: var(--black); 
+  background: var(--black);
 }
 
 .bt-secondary::before {
@@ -347,11 +347,11 @@ button {
 }
 
 #figma-bt::before {
-  background: var(--figma); 
+  background: var(--figma);
 }
 
 #dribbble-bt::before {
-  background: var(--dribbble); 
+  background: var(--dribbble);
 }
 
 #figma-bt:hover {
@@ -944,6 +944,97 @@ button .white-fill {
 .highlight {
   border-bottom-width: 6px;
   border-bottom-style: solid;
+}
+
+/* checkbox styling */
+
+:root {
+  --plusminus: 1.5rem;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label + .faq-answer {
+  max-height: 100px;
+}
+
+.plusminus {
+  display: block;
+  position: relative;
+  /*Change to resize the plusminus box*/
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Common styles for both spans */
+.plusminus span {
+  display: block;
+  position: absolute;
+  background: #f2f2f2;
+  transition: all 0.25s ease; /* Unified transition */
+}
+
+/* Styles for the first span */
+.plusminus span:nth-child(1) {
+  margin: 0 10%;
+  width: 66.6%;
+  height: 0.125rem;
+  top: calc(50% - 3.5px);
+}
+
+/* Styles for the second span */
+.plusminus span:nth-child(2) {
+  margin: 10% 0;
+  width: 0.125rem;
+  height: 66.6%;
+  left: calc(50% - 3.5px);
+}
+
+.plusminus:hover span {
+  background: var(--green);
+}
+
+/*Everything after this is just for presentation*/
+
+label {
+  cursor: pointer;
+}
+
+/* reveal classes */
+
+.hidden,
+.hidden-down,
+.hidden-up,
+.hidden-left {
+  opacity: 0;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+  transition-property: opacity, transform;
+}
+
+/* Common transform rules based on direction */
+.hidden {
+  transform: translateX(-30%);
+}
+
+.hidden-down {
+  transform: translateY(-100%);
+}
+
+.hidden-up {
+  transform: translateY(100%);
+}
+
+.hidden-left {
+  transform: translateX(30%);
+}
+
+/* Common show class */
+.show {
+  opacity: 1;
+  transform: translate(0, 0); /* Reset transform for all directions */
 }
 
 /* Small devices (mobile) */

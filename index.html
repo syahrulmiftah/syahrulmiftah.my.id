@@ -5,17 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="utility.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="checkbox.css" />
-    <link rel="stylesheet" href="reveal.css" />
     <script src="script.js" defer></script>
     <link rel="icon" href="/res/favicon.svg" type="image/svg+xml" />
-    <!-- 'defer' ensures the script runs after the HTML is fully loaded -->
+    <link
+      rel="preload"
+      as="image"
+      href="./res/img-hero.jpg"
+      type="image/jpeg"
+    />
 
-    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"
+      defer
+    ></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+      defer
     ></script>
     <script type="text/javascript">
       (function () {

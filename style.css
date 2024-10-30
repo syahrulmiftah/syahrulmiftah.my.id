@@ -339,19 +339,19 @@ button {
 }
 
 .bt-primary::before {
-  background: var(--black); /* The color to transition to */
+  background: var(--black); 
 }
 
 .bt-secondary::before {
-  background: var(--white); /* The color to transition to */
+  background: var(--white);
 }
 
 #figma-bt::before {
-  background: var(--figma); /* The color to transition to */
+  background: var(--figma); 
 }
 
 #dribbble-bt::before {
-  background: var(--dribbble); /* The color to transition to */
+  background: var(--dribbble); 
 }
 
 #figma-bt:hover {

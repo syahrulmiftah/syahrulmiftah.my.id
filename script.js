@@ -15,8 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
   typeInstance.go();
 });
 
-
-
 // INTERSECTION OBSERVER
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -32,7 +30,10 @@ document.addEventListener("DOMContentLoaded", function () {
     ".section-header",
     ".section-hero",
     ".section-quote",
-    ".section-projects",
+    ".section-projects-title",
+    "#project-1",
+    "#project-2",
+    "#project-3",
     ".section-about",
     ".section-email",
     ".section-faq",

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Webpage</title>
+    <link rel="stylesheet" href="/node_modules/lenis/dist/lenis.css" />
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script>
+      // Initialize Lenis
+      const lenis = new Lenis();
+
+      // Listen for the scroll event and log the event data
+      lenis.on("scroll", (e) => {
+        console.log(e);
+      });
+
+      // Use requestAnimationFrame to continuously update the scroll
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Our Sample Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#section-about">About</a></li>
+          <li><a href="#section-services">Services</a></li>
+          <li><a href="#section-contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="section-about">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+          tincidunt justo ac nisi viverra, eget efficitur metus scelerisque.
+        </p>
+      </section>
+
+      <section id="section-services">
+        <h2>Our Services</h2>
+        <div class="service">
+          <h3>Service One</h3>
+          <p>
+            Praesent aliquet, purus vitae tincidunt efficitur, quam ex fringilla
+            arcu, ut consequat libero massa et lacus.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Service Two</h3>
+          <p>
+            Morbi dictum, ipsum sed faucibus cursus, arcu ligula facilisis odio,
+            vitae tempus massa justo a magna.
+          </p>
+        </div>
+      </section>
+
+      <section id="section-contact">
+        <h2>Contact Us</h2>
+        <p>
+          For more information, please reach out at
+          <a href="mailto:contact@example.com">contact@example.com</a>.
+        </p>
+      </section>
+      <section id="section-about">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+          tincidunt justo ac nisi viverra, eget efficitur metus scelerisque.
+        </p>
+      </section>
+
+      <section id="section-services">
+        <h2>Our Services</h2>
+        <div class="service">
+          <h3>Service One</h3>
+          <p>
+            Praesent aliquet, purus vitae tincidunt efficitur, quam ex fringilla
+            arcu, ut consequat libero massa et lacus.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Service Two</h3>
+          <p>
+            Morbi dictum, ipsum sed faucibus cursus, arcu ligula facilisis odio,
+            vitae tempus massa justo a magna.
+          </p>
+        </div>
+      </section>
+
+      <section id="section-contact">
+        <h2>Contact Us</h2>
+        <p>
+          For more information, please reach out at
+          <a href="mailto:contact@example.com">contact@example.com</a>.
+        </p>
+      </section>
+      <section id="section-about">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+          tincidunt justo ac nisi viverra, eget efficitur metus scelerisque.
+        </p>
+      </section>
+
+      <section id="section-services">
+        <h2>Our Services</h2>
+        <div class="service">
+          <h3>Service One</h3>
+          <p>
+            Praesent aliquet, purus vitae tincidunt efficitur, quam ex fringilla
+            arcu, ut consequat libero massa et lacus.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Service Two</h3>
+          <p>
+            Morbi dictum, ipsum sed faucibus cursus, arcu ligula facilisis odio,
+            vitae tempus massa justo a magna.
+          </p>
+        </div>
+      </section>
+
+      <section id="section-contact">
+        <h2>Contact Us</h2>
+        <p>
+          For more information, please reach out at
+          <a href="mailto:contact@example.com">contact@example.com</a>.
+        </p>
+      </section>
+      <section id="section-about">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+          tincidunt justo ac nisi viverra, eget efficitur metus scelerisque.
+        </p>
+      </section>
+
+      <section id="section-services">
+        <h2>Our Services</h2>
+        <div class="service">
+          <h3>Service One</h3>
+          <p>
+            Praesent aliquet, purus vitae tincidunt efficitur, quam ex fringilla
+            arcu, ut consequat libero massa et lacus.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Service Two</h3>
+          <p>
+            Morbi dictum, ipsum sed faucibus cursus, arcu ligula facilisis odio,
+            vitae tempus massa justo a magna.
+          </p>
+        </div>
+      </section>
+
+      <section id="section-contact">
+        <h2>Contact Us</h2>
+        <p>
+          For more information, please reach out at
+          <a href="mailto:contact@example.com">contact@example.com</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Sample Webpage. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

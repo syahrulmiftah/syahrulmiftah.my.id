@@ -1,3 +1,20 @@
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
 @font-face {
   font-family: "Space Grotesk";
   font-style: normal;
@@ -1159,7 +1176,7 @@ label {
 .section-projects-content {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 8rem;
 }
 
 /* Small devices (mobile) */
@@ -1251,6 +1268,9 @@ label {
   }
   .section-hero img {
     max-width: 10rem;
+  }
+  .section-projects-content {
+    gap: 4rem;
   }
   .connect-input {
     border-radius: 8px;

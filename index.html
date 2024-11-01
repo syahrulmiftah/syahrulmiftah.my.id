@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="lenis">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,7 @@
     the web design environment"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/node_modules/lenis/dist/lenis.css" />
     <script src="script.js" defer></script>
     <link rel="icon" href="/res/favicon.svg" type="image/svg+xml" />
     <link
@@ -35,7 +36,7 @@
         });
       })();
     </script>
-
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
     <title>Syahrul's Portfolio</title>
   </head>
   <body>
@@ -86,7 +87,7 @@
             </div>
           </div>
           <div class="title-main">
-            <h1 class="hidden-up">I DESIGN</h1>
+            <h1 class="hidden-up" id="test">I DESIGN</h1>
             <h1 class="typewriter" id="typewriter">
               <span id="text"></span>
               <div id="caret" class="caret"></div>

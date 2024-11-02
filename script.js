@@ -32,55 +32,55 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // INTERSECTION OBSERVER
 
-document.addEventListener("DOMContentLoaded", function () {
-  const hiddenClasses = [
-    ".hidden",
-    ".hidden-down",
-    ".hidden-up",
-    ".hidden-left",
-  ];
+// document.addEventListener("DOMContentLoaded", function () {
+//   const hiddenClasses = [
+//     ".hidden",
+//     ".hidden-down",
+//     ".hidden-up",
+//     ".hidden-left",
+//   ];
 
-  const sections = [
-    ".section-header",
-    ".section-hero",
-    ".section-quote",
-    ".section-projects-title",
-    "#project-1",
-    "#project-2",
-    "#project-3",
-    "#project-4",
-    "#project-5",
-    ".section-about",
-    ".section-email",
-    ".section-faq",
-    ".section-footer",
-  ];
+//   const sections = [
+//     ".section-header",
+//     ".section-hero",
+//     ".section-quote",
+//     ".section-projects-title",
+//     "#project-1",
+//     "#project-2",
+//     "#project-3",
+//     "#project-4",
+//     "#project-5",
+//     ".section-about",
+//     ".section-email",
+//     ".section-faq",
+//     ".section-footer",
+//   ];
 
-  sections.forEach((sectionSelector) => {
-    const section = document.querySelector(sectionSelector);
+//   sections.forEach((sectionSelector) => {
+//     const section = document.querySelector(sectionSelector);
 
-    if (section) {
-      hiddenClasses.forEach((hiddenClass) => {
-        const hiddenElements = section.querySelectorAll(hiddenClass);
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            const target = entry.target;
+//     if (section) {
+//       hiddenClasses.forEach((hiddenClass) => {
+//         const hiddenElements = section.querySelectorAll(hiddenClass);
+//         const observer = new IntersectionObserver((entries) => {
+//           entries.forEach((entry) => {
+//             const target = entry.target;
 
-            if (entry.isIntersecting) {
-              target.classList.add("show");
-            }
-          });
-        });
+//             if (entry.isIntersecting) {
+//               target.classList.add("show");
+//             }
+//           });
+//         });
 
-        hiddenElements.forEach((element, index) => {
-          const delay = index * 0.1;
-          element.style.transitionDelay = `${delay}s`;
-          observer.observe(element);
-        });
-      });
-    }
-  });
-});
+//         hiddenElements.forEach((element, index) => {
+//           const delay = index * 0.1;
+//           element.style.transitionDelay = `${delay}s`;
+//           observer.observe(element);
+//         });
+//       });
+//     }
+//   });
+// });
 
 // FAQ SECTION DROPDOWN ACCORDION
 

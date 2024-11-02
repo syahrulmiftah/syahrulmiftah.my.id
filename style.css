@@ -769,8 +769,7 @@ button {
 
 .img-project {
   display: flex;
-  height: 40rem;
-  padding: 5rem 1.25rem;
+  padding: 2rem 1.25rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;

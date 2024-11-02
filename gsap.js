@@ -1,46 +1,53 @@
-const hiddenClasses = [
-    "hidden",
-    "hidden-down",
-    "hidden-up",
-    "hidden-left",
+document.addEventListener("DOMContentLoaded", function () {
+  const hiddenClasses = [
+    ".hidden",
+    ".hidden-down",
+    ".hidden-up",
+    ".hidden-left",
   ];
-  
-  // Iterate over each class and remove it from matching elements
-  hiddenClasses.forEach(className => {
-    // Select all elements with the current class
-    const elements = document.querySelectorAll(`.${className}`);
-    
-    elements.forEach(element => {
-      // Remove the class from the element
-      element.classList.remove(className);
-    });
+
+  const sections = [
+    ".section-header",
+    ".section-hero",
+    ".section-quote",
+    ".section-projects-title",
+    "#project-1",
+    "#project-2",
+    "#project-3",
+    "#project-4",
+    "#project-5",
+    ".section-about",
+    ".section-email",
+    ".section-faq",
+    ".section-footer",
+  ];
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  sections.forEach((sectionSelector) => {
+    const section = document.querySelector(sectionSelector);
+
+    if (section) {
+      hiddenClasses.forEach((hiddenClass) => {
+        const hiddenElements = section.querySelectorAll(hiddenClass);
+
+        hiddenElements.forEach((element, index) => {
+          const delay = index * 0.1;
+
+          // Use ScrollTrigger to toggle "show" class when element enters viewport
+          ScrollTrigger.create({
+            trigger: element,
+            start: "top 80%", // Starts when the element is 80% into the viewport
+            toggleClass: { targets: element, className: "show" },
+            once: true, // Trigger only once
+          });
+
+          // Apply delay using GSAP's delayed call
+          gsap.delayedCall(delay, () => {
+            ScrollTrigger.refresh(); // Refresh to ensure the staggered timing effect
+          });
+        });
+      });
+    }
   });
-
-// GSAP
-import { gsap } from "gsap";
-
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-import Lenis from "lenis";
-
-gsap.registerPlugin(ScrollTrigger);
-
-// Initialize a new Lenis instance for smooth scrolling
-const lenis = new Lenis();
-
-// Listen for the 'scroll' event and log the event data to the console
-lenis.on("scroll", (e) => {
-  console.log(e);
 });
-
-// Synchronize Lenis scrolling with GSAP's ScrollTrigger plugin
-lenis.on("scroll", ScrollTrigger.update);
-
-// Add Lenis's requestAnimationFrame (raf) method to GSAP's ticker
-// This ensures Lenis's smooth scroll animation updates on each GSAP tick
-gsap.ticker.add((time) => {
-  lenis.raf(time * 1000); // Convert time from seconds to milliseconds
-});
-
-// Disable lag smoothing in GSAP to prevent any delay in scroll animations
-gsap.ticker.lagSmoothing(0);

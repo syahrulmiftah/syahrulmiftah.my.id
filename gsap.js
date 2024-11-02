@@ -32,19 +32,16 @@ document.addEventListener("DOMContentLoaded", function () {
         const hiddenElements = section.querySelectorAll(hiddenClass);
 
         hiddenElements.forEach((element, index) => {
-          const delay = index * 0.1;
-
           // Use ScrollTrigger to toggle "show" class when element enters viewport
           ScrollTrigger.create({
             trigger: element,
-            start: "top 80%", // Starts when the element is 80% into the viewport
             toggleClass: { targets: element, className: "show" },
             once: true, // Trigger only once
           });
 
-          // Apply delay using GSAP's delayed call
-          gsap.delayedCall(delay, () => {
-            ScrollTrigger.refresh(); // Refresh to ensure the staggered timing effect
+          hiddenElements.forEach((element, index) => {
+            const delay = index * 0.1;
+            element.style.transitionDelay = `${delay}s`;
           });
         });
       });

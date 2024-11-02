@@ -15,8 +15,6 @@ window.dispatchEvent(new CustomEvent("ptupdate"));
 
 // TYPEIT TYPING EFFECT
 document.addEventListener("DOMContentLoaded", function () {
-  document.documentElement.style.setProperty("--ti-cursor-color", "red");
-
   const typeInstance = new TypeIt("#text", {
     strings: ["INTERFACES", "WEBSITE", "LANDING PAGE", "MOBILE APP"],
     speed: 100,
@@ -32,55 +30,55 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // INTERSECTION OBSERVER
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const hiddenClasses = [
-//     ".hidden",
-//     ".hidden-down",
-//     ".hidden-up",
-//     ".hidden-left",
-//   ];
+document.addEventListener("DOMContentLoaded", function () {
+  const hiddenClasses = [
+    ".hidden",
+    ".hidden-down",
+    ".hidden-up",
+    ".hidden-left",
+  ];
 
-//   const sections = [
-//     ".section-header",
-//     ".section-hero",
-//     ".section-quote",
-//     ".section-projects-title",
-//     "#project-1",
-//     "#project-2",
-//     "#project-3",
-//     "#project-4",
-//     "#project-5",
-//     ".section-about",
-//     ".section-email",
-//     ".section-faq",
-//     ".section-footer",
-//   ];
+  const sections = [
+    ".section-header",
+    ".section-hero",
+    ".section-quote",
+    ".section-projects-title",
+    "#project-1",
+    "#project-2",
+    "#project-3",
+    "#project-4",
+    "#project-5",
+    ".section-about",
+    ".section-email",
+    ".section-faq",
+    ".section-footer",
+  ];
 
-//   sections.forEach((sectionSelector) => {
-//     const section = document.querySelector(sectionSelector);
+  sections.forEach((sectionSelector) => {
+    const section = document.querySelector(sectionSelector);
 
-//     if (section) {
-//       hiddenClasses.forEach((hiddenClass) => {
-//         const hiddenElements = section.querySelectorAll(hiddenClass);
-//         const observer = new IntersectionObserver((entries) => {
-//           entries.forEach((entry) => {
-//             const target = entry.target;
+    if (section) {
+      hiddenClasses.forEach((hiddenClass) => {
+        const hiddenElements = section.querySelectorAll(hiddenClass);
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            const target = entry.target;
 
-//             if (entry.isIntersecting) {
-//               target.classList.add("show");
-//             }
-//           });
-//         });
+            if (entry.isIntersecting) {
+              target.classList.add("show");
+            }
+          });
+        });
 
-//         hiddenElements.forEach((element, index) => {
-//           const delay = index * 0.1;
-//           element.style.transitionDelay = `${delay}s`;
-//           observer.observe(element);
-//         });
-//       });
-//     }
-//   });
-// });
+        hiddenElements.forEach((element, index) => {
+          const delay = index * 0.1;
+          element.style.transitionDelay = `${delay}s`;
+          observer.observe(element);
+        });
+      });
+    }
+  });
+});
 
 // FAQ SECTION DROPDOWN ACCORDION
 
@@ -228,7 +226,7 @@ function easeInOutSine(x) {
 }
 
 const lenis = new Lenis({
-  duration: 2, // Duration of the scroll animation (higher = slower scroll)
+  duration: 1, // Duration of the scroll animation (higher = slower scroll)
   // easing: easeInOutSine, // The easing function for scroll smoothing
   smooth: true, // Enable smooth scrolling
   direction: "vertical", // Direction of scroll ('vertical' or 'horizontal')

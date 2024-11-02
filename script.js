@@ -1,3 +1,18 @@
+// EMAIL JS
+(function () {
+  emailjs.init({
+    publicKey: "pb7QFOLamIFS-p2bx",
+  });
+})();
+
+// PARTYTOWN
+const script = document.createElement("script");
+script.type = "text/partytown";
+script.innerHTML = `console.log("New partytown script!")`;
+document.head.appendChild(script);
+
+window.dispatchEvent(new CustomEvent("ptupdate"));
+
 // TYPEIT TYPING EFFECT
 document.addEventListener("DOMContentLoaded", function () {
   document.documentElement.style.setProperty("--ti-cursor-color", "red");
@@ -25,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
     ".hidden-left",
   ];
 
-  // List of sections to apply the transition delay
   const sections = [
     ".section-header",
     ".section-hero",
@@ -40,16 +54,14 @@ document.addEventListener("DOMContentLoaded", function () {
     ".section-email",
     ".section-faq",
     ".section-footer",
-  ]; // Add your section selectors here
+  ];
 
   sections.forEach((sectionSelector) => {
     const section = document.querySelector(sectionSelector);
 
     if (section) {
       hiddenClasses.forEach((hiddenClass) => {
-        // Select only the hidden elements within the specific section
         const hiddenElements = section.querySelectorAll(hiddenClass);
-
         const observer = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             const target = entry.target;
@@ -61,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         hiddenElements.forEach((element, index) => {
-          const delay = index * 0.1; // Adjust delay increment as needed
+          const delay = index * 0.1;
           element.style.transitionDelay = `${delay}s`;
           observer.observe(element);
         });
@@ -211,11 +223,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Initialize LENIS
-const lenis = new Lenis();
+function easeInOutSine(x) {
+  return -(Math.cos(Math.PI * x) - 1) / 2;
+}
 
-// Listen for the scroll event and log the event data
-lenis.on("scroll", (e) => {
-  console.log(e);
+const lenis = new Lenis({
+  duration: 2, // Duration of the scroll animation (higher = slower scroll)
+  // easing: easeInOutSine, // The easing function for scroll smoothing
+  smooth: true, // Enable smooth scrolling
+  direction: "vertical", // Direction of scroll ('vertical' or 'horizontal')
 });
 
 // Use requestAnimationFrame to continuously update the scroll

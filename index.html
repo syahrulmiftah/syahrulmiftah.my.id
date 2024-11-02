@@ -10,8 +10,21 @@
     the web design environment"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="/node_modules/lenis/dist/lenis.css" />
     <script src="script.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script
+      src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"
+    ></script>
+    <title>Syahrul's Portfolio</title>
+    <script
+      type="module"
+      src="/node_modules/@builder.io/partytown/lib/partytown-sw.js"
+    ></script>
     <link rel="icon" href="/res/favicon.svg" type="image/svg+xml" />
     <link
       rel="preload"
@@ -19,25 +32,6 @@
       href="./res/img-hero.jpg"
       type="image/jpeg"
     />
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"
-      defer
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-      defer
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "pb7QFOLamIFS-p2bx",
-        });
-      })();
-    </script>
-    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
-    <title>Syahrul's Portfolio</title>
   </head>
   <body>
     <header class="section-header">
@@ -1367,12 +1361,5 @@
         </div>
       </footer>
     </div>
-    <script>
-      import { partytownSnippet } from "@builder.io/partytown/integration";
-      const snippetText = partytownSnippet();
-      const el = document.createElement("script");
-      el.innerText = snippetText;
-      document.body.appendChild(el);
-    </script>
   </body>
 </html>

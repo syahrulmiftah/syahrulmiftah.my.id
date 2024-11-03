@@ -570,7 +570,28 @@ $colors: (
 @each $name, $color in $colors {
   .#{$name} {
     border-bottom-color: var(--#{$name}, #{$color});
+    &::after {
+      background-color: var(--#{$name}, #{$color});
+    }
   }
+}
+
+// .custom-underline {
+//   border-bottom-width: 6px;
+//   border-bottom-style: solid;
+// }
+.custom-underline {
+  position: relative;
+  display: inline-block; /* Ensures the element width matches the text */
+}
+
+.custom-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0; /* Distance from text */
+  width: 100%;
+  height: 6px; /* Custom underline thickness */
 }
 
 .section-quote {
@@ -583,7 +604,7 @@ $colors: (
   border-bottom: 1px solid var(--grey-850, #262626);
   background: var(--black, #000);
 
-  color: var(--grey-500, #808080);
+  color: var(--grey-850, #808080);
   text-align: center;
   font-family: "Mango Grotesque";
   font-size: var(--quote-font-size);
@@ -601,9 +622,9 @@ $colors: (
   .who-says {
     list-style-type: none;
   }
-  span {
-    color: var(--grey-150, #d9d9d9);
-  }
+  // span {
+  //   color: var(--grey-150, #d9d9d9);
+  // }
   .container {
     max-width: 1080px;
     align-self: center;
@@ -621,9 +642,9 @@ $colors: (
 
 .container-project {
   background-color: var(--black, #000);
-
-  display: grid;
-  grid-template-columns: 2fr 3fr;
+  border: solid 1px red;
+  display: flex;
+  // grid-template-columns: 2fr 3fr;
   gap: 2.5rem;
 }
 
@@ -633,6 +654,7 @@ $colors: (
   align-items: flex-start;
   align-self: center;
   gap: 2.5rem;
+  max-width: 480px;
 }
 
 .project-description {
@@ -1006,11 +1028,6 @@ button .white-fill {
   height: 30px;
 }
 
-.highlight {
-  border-bottom-width: 6px;
-  border-bottom-style: solid;
-}
-
 /* checkbox styling */
 
 :root {
@@ -1097,7 +1114,7 @@ label {
 
 /* Small devices (mobile) */
 @media (max-width: 400px) {
-  .highlight {
+  .custom-underline {
     border-bottom-width: 2px;
   }
   .email-me p {
@@ -1128,7 +1145,7 @@ label {
 
 /* breakpoint for tablet only*/
 @media (min-width: 401px) and (max-width: 1024px) {
-  .highlight {
+  .custom-underline {
     border-bottom-width: 4px;
   }
 }

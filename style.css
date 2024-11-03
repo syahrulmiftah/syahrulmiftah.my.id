@@ -882,10 +882,6 @@ button {
   border: 1px solid var(--primary, #4cda35);
 }
 
-button .white-fill {
-  fill: var(--red);
-}
-
 .CTA {
   display: flex;
   align-items: center;

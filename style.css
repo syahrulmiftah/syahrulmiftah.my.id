@@ -627,7 +627,6 @@ button {
 
 .container-project {
   background-color: var(--black, #000);
-  border: solid 1px red;
   display: flex;
   gap: 2.5rem;
 }

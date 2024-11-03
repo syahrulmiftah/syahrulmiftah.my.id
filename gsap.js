@@ -76,6 +76,5 @@ document.addEventListener("DOMContentLoaded", function () {
     end: "bottom -265%",
     end: "500% 50%",
     pin: splitQuote,
-    markers: true,
   });
 });

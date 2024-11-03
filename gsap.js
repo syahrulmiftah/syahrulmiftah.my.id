@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
       start: "top 80px",
       end: `+=${height}`,
       toggleClass: "show",
-      markers: true,
+      // markers: true,
     });
   });
 });

@@ -476,21 +476,21 @@ button {
   align-self: center;
 }
 
-#figma-bt::before {
-  background: var(--figma);
-}
+// #figma-bt::before {
+//   background: var(--figma);
+// }
 
-#dribbble-bt::before {
-  background: var(--dribbble);
-}
+// #dribbble-bt::before {
+//   background: var(--dribbble);
+// }
 
-#figma-bt:hover {
-  border: var(--figma);
-}
+// #figma-bt:hover {
+//   border: var(--figma);
+// }
 
-#dribbble-bt:hover {
-  border: var(--dribbble);
-}
+// #dribbble-bt:hover {
+//   border: var(--dribbble);
+// }
 
 .header-container .bt-secondary {
   position: relative; /* Position relative to position pseudo-element */
@@ -553,6 +553,9 @@ button {
   padding: var(--green-box-padding);
   justify-content: center;
   align-items: center;
+  flex-shrink: 1;
+  flex-basis: auto;
+  flex-grow: 0;
 
   border-radius: 4px;
   background: var(--primary-25, rgba(76, 218, 53, 0.25));
@@ -580,10 +583,6 @@ $colors: (
   }
 }
 
-// .custom-underline {
-//   border-bottom-width: 6px;
-//   border-bottom-style: solid;
-// }
 .custom-underline {
   position: relative;
   display: inline-block; /* Ensures the element width matches the text */
@@ -634,57 +633,81 @@ $colors: (
     align-self: center;
   }
 }
-
-/*FEATURED PROJECTS*/
-
 .container-title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.5rem;
 }
+/*FEATURED PROJECTS*/
+.section-projects {
+  .section-projects-content {
+    background-color: var(--black, #000);
 
-.container-project {
-  background-color: var(--black, #000);
-  display: flex;
-  // grid-template-columns: 2fr 3fr;
-  gap: 2.5rem;
-}
-
-.project-details {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: center;
-  gap: 2.5rem;
-  max-width: 480px;
-}
-
-.project-description {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.5rem;
-  p {
-    color: var(--grey-500, #808080);
-  }
-  .title {
     display: flex;
-    padding-left: 0.75rem;
-    justify-content: center;
+    flex-direction: column;
+    gap: 8rem;
+    .container-project {
+      background-color: var(--black, #000);
+      // display: flex;
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      gap: 2.5rem;
+      .project-details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: center;
+        gap: 2.5rem;
+        max-width: 480px;
+        .project-description {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1.5rem;
+          p {
+            color: var(--grey-500, #808080);
+          }
+          .title {
+            display: flex;
+            padding-left: 0.75rem;
+            justify-content: center;
+          }
+        }
+      }
+      .img-project {
+        display: flex;
+        padding: 2rem 1.25rem;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+        align-items: stretch;
+        flex: 1 0 0;
+
+        border-radius: 1.5rem;
+        border: 1px solid var(--grey-850, #262626);
+        background: var(--grey-960, #0a0a0a);
+        img {
+          width: 100%;
+          flex-shrink: 0;
+          border-radius: 1.5rem;
+        }
+      }
+    }
   }
 }
 
-.section-projects-content {
-  background-color: var(--black, #000);
+#excon-video {
+  border-radius: 1.5rem;
+  object-fit: cover;
 
-  display: flex;
-  flex-direction: column;
-  gap: 8rem;
+  width: 100%;
+  // height: 100%;
 }
 
 // Define a map for project colors
 $project-colors: (
+  excon: #dd5226,
   1: #00fff0,
   2: #14f195,
   3: #7badea,
@@ -727,8 +750,7 @@ $project-colors: (
   align-self: stretch;
 }
 
-.year,
-.role {
+.p-info {
   display: flex;
   padding: 16px 0px;
   justify-content: space-between;
@@ -738,9 +760,9 @@ $project-colors: (
   border-bottom: 1px solid var(--grey-800, #333);
 }
 
-.year {
-  border-top: 1px solid var(--grey-800, #333);
-}
+// .b-top {
+//   border-top: 1px solid var(--grey-800, #333);
+// }
 
 .upper {
   text-transform: uppercase;
@@ -751,6 +773,7 @@ $project-colors: (
   align-items: center;
   gap: 24px;
   align-self: stretch;
+  margin-top: 1rem;
 }
 
 .p-sm-mono {
@@ -760,25 +783,6 @@ $project-colors: (
   font-weight: 400;
   line-height: 24px; /* 150% */
   color: var(--white, #f5f5f5);
-}
-
-.img-project {
-  display: flex;
-  padding: 2rem 1.25rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  flex: 1 0 0;
-
-  border-radius: 1.5rem;
-  border: 1px solid var(--grey-850, #262626);
-  background: var(--grey-960, #0a0a0a);
-  img {
-    width: 100%;
-    flex-shrink: 0;
-    border-radius: 1.5rem;
-  }
 }
 
 /*About*/

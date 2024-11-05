@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ".section-hero",
     ".section-quote",
     ".section-projects-title",
+    "#project-excon",
     "#project-1",
     "#project-2",
     "#project-3",

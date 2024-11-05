@@ -520,6 +520,7 @@ button {
   flex-direction: row;
   padding-top: clamp(1.5rem, -0.25rem + 7vw, 5rem);
   align-items: center;
+  align-self: flex-start;
   border-bottom: 1px solid var(--grey-850, #262626);
   img {
     border-radius: 1000px;
@@ -649,9 +650,9 @@ $colors: (
     gap: 8rem;
     .container-project {
       background-color: var(--black, #000);
-      // display: flex;
-      display: grid;
-      grid-template-columns: 2fr 3fr;
+      display: flex;
+      // display: grid;
+      // grid-template-columns: 2fr 3fr;
       gap: 2.5rem;
       .project-details {
         display: flex;
@@ -659,7 +660,7 @@ $colors: (
         align-items: flex-start;
         align-self: center;
         gap: 2.5rem;
-        max-width: 480px;
+        max-width: 360px;
         .project-description {
           display: flex;
           flex-direction: column;

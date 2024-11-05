@@ -1243,3 +1243,11 @@ label {
     flex-basis: auto;
   }
 }
+@media (min-width: 1024px) {
+  #green-box-hero {
+    h5 {
+      font-size: 2.25rem;
+      line-height: 2.25rem;
+    }
+  }
+}

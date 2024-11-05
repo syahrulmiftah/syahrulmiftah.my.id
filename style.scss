@@ -286,7 +286,7 @@ h3 {
   font-style: normal;
   font-weight: 500;
   line-height: var(--h3-size); /* 100% */
-  letter-spacing: 1.28px;
+  letter-spacing: 2.5px;
 }
 
 /* h4 {
@@ -539,7 +539,7 @@ button {
     }
   }
   #hero-image-container {
-    max-width: 340px;
+    max-width: 400px;
   }
 }
 
@@ -760,9 +760,9 @@ $project-colors: (
   border-bottom: 1px solid var(--grey-800, #333);
 }
 
-// .b-top {
-//   border-top: 1px solid var(--grey-800, #333);
-// }
+.b-top {
+  border-top: 1px solid var(--grey-800, #333);
+}
 
 .upper {
   text-transform: uppercase;
@@ -1250,4 +1250,28 @@ label {
       line-height: 2.25rem;
     }
   }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00ff1a;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 10000px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+  cursor: pointer;
 }

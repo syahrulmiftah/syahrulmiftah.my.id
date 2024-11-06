@@ -14,19 +14,19 @@ document.head.appendChild(script);
 window.dispatchEvent(new CustomEvent("ptupdate"));
 
 // TYPEIT TYPING EFFECT
-document.addEventListener("DOMContentLoaded", function () {
-  const typeInstance = new TypeIt("#text", {
-    strings: ["INTERFACES", "WEBSITE", "LANDING PAGE", "MOBILE APP"],
-    speed: 100,
-    breakLines: false,
-    loop: true,
-    deleteSpeed: 75,
-    nextStringDelay: [2000, 500],
-    cursor: false, // Disable TypeIt.js's default blinking cursor
-    loopDelay: 3000,
-  });
-  typeInstance.go();
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   const typeInstance = new TypeIt("#text", {
+//     strings: ["INTERFACES", "WEBSITE", "LANDING PAGE", "MOBILE APP"],
+//     speed: 100,
+//     breakLines: false,
+//     loop: true,
+//     deleteSpeed: 75,
+//     nextStringDelay: [2000, 500],
+//     cursor: false, // Disable TypeIt.js's default blinking cursor
+//     loopDelay: 3000,
+//   });
+//   typeInstance.go();
+// });
 
 // INTERSECTION OBSERVER
 
